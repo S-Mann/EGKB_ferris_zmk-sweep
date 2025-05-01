@@ -61,12 +61,12 @@
 
         left_bluetooth {
             bindings = <&mo 4>;
-            key-positions = <0 1 2 3>;
+            key-positions = <31 32>;
         };
 
         right_bluetooth {
             bindings = <&mo 4>;
-            key-positions = <6 7 8 9>;
+            key-positions = <33 34>;
         };
     };
 
