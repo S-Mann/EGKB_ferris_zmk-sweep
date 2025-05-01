@@ -47,6 +47,16 @@
         // both right thumb keys
         // internal-left & external-right thumb keys
         // both left thumb keys
+
+        left_bluetooth {
+            bindings = <&mo 4>;
+            key-positions = <0 1 2 3>;
+        };
+
+        right_bluetooth {
+            bindings = <&mo 4>;
+            key-positions = <6 7 8 9>;
+        };
     };
 
     keymap {
@@ -89,43 +99,23 @@
 
         adjust {
             bindings = <
-&trans             &trans           &trans      &trans              &trans        &kp F1   &kp F2       &kp F3  &kp F4  &kp F5
-&trans             &kp C_PREV       &kp C_PLAY  &kp C_NEXT          &kp C_MUTE    &kp F6   &kp F7       &kp F8  &kp F9  &kp F10
-&kp K_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none               &none         &kp F11  &kp F12      &none   &none   &sys_reset
+&trans             &trans           &trans      &trans              &trans        &kp F1   &kp F2       &kp F3  &kp F4       &kp F5
+&trans             &kp C_PREV       &kp C_PLAY  &kp C_NEXT          &kp C_MUTE    &kp F6   &kp F7       &kp F8  &kp F9       &kp F10
+&kp K_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none               &none         &kp F11  &kp F12      &none   &bootloader  &sys_reset
                                                 &lt 1 SINGLE_QUOTE  &none         &none    &lt 2 SPACE
             >;
         };
 
         // Low frequency symbols.
-
-        symbols_2_layer {
-            bindings = <
-&kp IT_CARET  &kp IT_UNDER  &kp IT_PND   &kp IT_EUR   &kp IT_HASH    &none  &none  &none  &none  &none
-&kp IT_BKTK   &kp IT_TILDE  &kp IT_BSLH  &kp IT_PIPE  &kp IT_AND     &none  &none  &none  &none  &none
-&none         &none         &kp IT_SECT  &kp IT_CCED  &kp IT_DEG     &none  &none  &none  &none  &none
-                                         &none        &none          &none  &none
-            >;
-        };
-
         // Used to type regional accents.
-
-        accent_layer {
-            bindings = <
-&none        &none        &none        &kp IT_CEGR  &none          &none  &none  &none  &none  &none
-&kp IT_AGRV  &kp IT_IGRV  &kp IT_OGRV  &kp IT_EGRV  &kp IT_EACU    &none  &none  &none  &none  &none
-&none        &none        &none        &kp IT_UGRV  &none          &none  &none  &none  &none  &none
-                                       &none        &none          &none  &none
-            >;
-        };
-
         // Used to change the keyboard's settings.
 
-        settings_layer {
+        bluetooth {
             bindings = <
-&bootloader  &none  &none  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 3  &none  &unstick  &none  &bootloader
-&none        &none  &none  &none       &bt BT_SEL 1    &bt BT_SEL 4  &none  &none     &none  &none
-&none        &none  &none  &none       &bt BT_SEL 2    &bt BT_SEL 5  &none  &none     &none  &none
-                           &none       &none           &none         &none
+&sys_reset   &none  &none  &none           &bt BT_SEL 0    &bt BT_SEL 0  &none           &unstick  &none  &sys_reset
+&bootloader  &none  &none  &bt BT_CLR_ALL  &bt BT_SEL 1    &bt BT_SEL 1  &bt BT_CLR_ALL  &none     &none  &bootloader
+&none        &none  &none  &bt BT_CLR      &bt BT_SEL 2    &bt BT_SEL 2  &bt BT_CLR      &none     &none  &none
+                           &none           &none           &none         &none
             >;
         };
     };
