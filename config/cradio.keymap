@@ -25,10 +25,6 @@
 
 &sk { ignore-modifiers; };
 
-// Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1 &ht LALT k2   &ht LCTRL k3 &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
-
 / {
 
     behaviors {
@@ -78,7 +74,7 @@
         default {
             bindings = <
 &kp Q               &kp W           &kp E           &kp R               &kp T        &kp Y          &kp U              &kp I            &kp O            &kp P
-HRML(A,             S,              D,              F)                  &kp G        &kp H          HRMR(J,            K,               L,               SEMICOLON)
+&mt LCTRL A         &mt LGUI S      &mt LALT D      &mt LSHFT F         &kp G        &kp H          &mt RSHFT J        &mt RALT K       &mt RGUI L       &mt LCTRL SEMICOLON
 &kp Z               &kp X           &kp C           &kp V               &kp B        &kp N          &kp M              &kp COMMA        &kp DOT          &kp SLASH
                                                     &lt 1 SINGLE_QUOTE  &kp ENTER    &kp BACKSPACE  &lt 2 SPACE
             >;
