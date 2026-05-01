@@ -86,7 +86,7 @@
 
         right_bluetooth {
             bindings = <&mo 4>;
-            key-positions = <33 34 32>;
+            key-positions = <34 33 32>;
         };
     };
 
@@ -108,10 +108,10 @@
 
         lower {
             bindings = <
-&kp N1    &kp N2        &kp N3     &kp N4              &kp N5     &kp N6     &kp N7       &kp N8        &kp N9            &kp N0
-&kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT           &kp TAB    &kp GRAVE  &kp MINUS    &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp HOME  &kp END       &kp PG_UP  &kp PG_DN           &trans     &kp EQUAL  &kp SLASH    &kp ASTERISK  &trans            &kp BACKSLASH
-                                   &lt 1 SINGLE_QUOTE  &trans     &trans     &lt 2 SPACE
+&kp N1    &kp N2        &kp N3          &kp N4              &kp N5     &kp N6     &kp N7       &kp N8        &kp N9            &kp N0
+&kp LEFT  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT           &kp TAB    &kp GRAVE  &kp MINUS    &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp HOME  &kp END       &kp PG_UP       &kp PG_DN           &trans     &kp EQUAL  &kp SLASH    &kp ASTERISK  &trans            &kp BACKSLASH
+                                        &lt 1 SINGLE_QUOTE  &trans     &trans     &lt 2 SPACE
             >;
         };
 
@@ -119,9 +119,9 @@
 
         raise {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR          &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp ESC          &trans       &trans    &trans              &trans         &kp TILDE  &kp UNDERSCORE  &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp LC(CAPS)     &trans       &trans    &trans              &trans         &trans     &trans          &trans     &trans                &kp PIPE
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR          &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp ESC          &trans       &trans    &trans              &trans         &kp TILDE  &kp UNDERSCORE  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp LC(CAPS)     &trans       &trans    &trans              &trans         &trans     &trans          &trans        &trans                &kp PIPE
                                         &lt 1 SINGLE_QUOTE  &kp DELETE     &trans     &lt 2 SPACE
             >;
         };
