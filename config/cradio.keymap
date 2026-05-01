@@ -86,7 +86,7 @@
 
         right_bluetooth {
             bindings = <&mo 4>;
-            key-positions = <34 33 32>;
+            key-positions = <32 33>;
         };
     };
 
