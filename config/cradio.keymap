@@ -120,7 +120,7 @@
         raise {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR          &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&sk ESC          &trans       &trans    &trans              &trans         &kp TILDE  &kp UNDERSCORE  &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp ESC          &trans       &trans    &trans              &trans         &kp TILDE  &kp UNDERSCORE  &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE
 &kp LC(CAPS)     &trans       &trans    &trans              &trans         &trans     &trans          &trans     &trans                &kp PIPE
                                         &lt 1 SINGLE_QUOTE  &kp DELETE     &trans     &lt 2 SPACE
             >;
